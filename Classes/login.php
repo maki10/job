@@ -16,10 +16,7 @@ class login
 		$pass = md5($_POST['pass']);
 		$login = "select * from user_reg where user = '".$user."' and pass = '".$pass."' ";
 		if(is_bool(mysql_query($login))){
-			while($row[] = mysql_fetch_assoc($login)){
-			$detail = $row;
-			}
-			$detail[0]['user'] = $_SESSION['user'];
+			#TODO SESSION LOGIN
 		}else{
 			echo "Uh oh something goes wrong!";
 			return false;
