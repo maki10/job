@@ -2,6 +2,10 @@
 
 require "Static/Static.php";
 
+/*
+* MAJOR DEBAG
+*/
+
 class Database
 {
 	
