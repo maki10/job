@@ -15,6 +15,7 @@ class App
 		$url = explode('/',$url);
 		$url[0] = strtolower($url[0]);
 		
+		echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"view/style.css\">";
 		require "view/navigation.html";
 		
 		$file = 'Classes/' . $url[0] . '.php';

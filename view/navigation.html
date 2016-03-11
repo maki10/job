@@ -1,11 +1,11 @@
-﻿<ul>
-<li><a href="<?php __DIR__;?>/job/index">Home</a></li>
-<li><a href="<?php __DIR__;?>/job/list_all">List all user</a></li>
+﻿<ul id="menu_wrap" class="Black">
+<li class="button"><a href="<?php __DIR__;?>/job/index">Home</a></li>
+<li class="button"><a href="<?php __DIR__;?>/job/list_all">List all user</a></li>
 <?php
 if(!isset($_SESSION['login'])){
-?> <li><a href="<?php __DIR__; ?>/job/login">Login</a></li><?php
+?> <li class="button"><a href="<?php __DIR__; ?>/job/login">Login</a></li><?php
 }else{
-?> <li><a href="<?php __DIR__; ?>/job/logout">Logout</a></li><?php
+?> <li class="button"><a href="<?php __DIR__; ?>/job/logout">Logout</a></li><?php
 }
 ?>
 </ul>
