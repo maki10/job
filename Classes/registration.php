@@ -6,7 +6,7 @@ class registration
 	
 	public function __construct()
 	{
-		require "Database.php";
+		require_once "Database.php";
 		require "view/registration.html";
 		$db = new Database(); 		
 	}
@@ -19,7 +19,9 @@ class registration
 		if(!empty($user) && !empty($pass)){
 		$query = "INSERT INTO user_reg(user, pass,date_reg)VALUES('".$user."','".$pass."','".$date."')";
 		if(is_bool(mysql_query($query))){
-			echo "Successfully add user!";
+			require "login.php";
+			$login = new login();
+			$login->details($user,$pass);
 		}else{
 			mysql_error($query);
 		}
