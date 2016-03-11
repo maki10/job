@@ -1,11 +1,11 @@
 ﻿<ul>
-<li><a href="index">Home</a></li>
-<li><a href="list_all">List all user</a></li>
+<li><a href="<?php __DIR__;?>/job/index">Home</a></li>
+<li><a href="<?php __DIR__;?>/job/list_all">List all user</a></li>
 <?php
 if(!isset($_SESSION['login'])){
-echo "<li><a href=\"login\">Login</a></li>";
+echo "<li><a href=\"__DIR__/job/login\">Login</a></li>";
 }else{
-echo "<li><a href=\"logout\">Logout</a></li>";
+echo "<li><a href=\"__DIR__/job/logout\">Logout</a></li>";
 }
 ?>
 </ul>
