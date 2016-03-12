@@ -1,7 +1,11 @@
-﻿<ul>
-<?php
-foreach($user as $users){
-	echo "<li>".$users['user']." AND TIME ".$users['date_reg']."</li>";
-}
-?>
-</ul>
+<div class="wrap">	
+	<ul class="users">
+		<div class="list">
+			<?php
+			foreach($user as $users){
+				echo "<li class=\"user_list\">".$users['user']." AND TIME ".$users['date_reg']."</li>";
+			}
+			?>
+		</div>
+	</ul>
+</div>

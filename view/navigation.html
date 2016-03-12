@@ -1,11 +1,14 @@
-﻿<ul id="menu_wrap" class="Black">
-<li class="button"><a href="<?php __DIR__;?>/job/index">Home</a></li>
-<li class="button"><a href="<?php __DIR__;?>/job/list_all">List all user</a></li>
-<?php
-if(!isset($_SESSION['login'])){
-?> <li class="button"><a href="<?php __DIR__; ?>/job/login">Login</a></li><?php
-}else{
-?> <li class="button"><a href="<?php __DIR__; ?>/job/logout">Logout</a></li><?php
-}
-?>
-</ul>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="wrap">
+	<ul id="menu_wrap" class="Black">
+	<li class="button"><a href="<?php __DIR__;?>/job/index">Home</a></li>
+	<li class="button"><a href="<?php __DIR__;?>/job/list_all">List all user</a></li>
+	<?php
+	if(!isset($_SESSION['login'])){
+	?> <li class="button"><a href="<?php __DIR__; ?>/job/login">Login</a></li><?php
+	}else{
+	?> <li class="button"><a href="<?php __DIR__; ?>/job/logout">Logout</a></li><?php
+	}
+	?>
+	</ul>
+</div>

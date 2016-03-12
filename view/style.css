@@ -1,10 +1,22 @@
-﻿#menu_wrap {
+body {
+	background-position: 50% 0%;
+    margin: 0;
+    padding: 0;
+	font-family: Calibri;
+}
+
+.wrap {
+     width: 300px;
+     margin: 0 2px;
+}
+
+#menu_wrap {
 	position:relative;
 	margin-top:0px;
 	margin-left:0px;
 	padding:0; 
 	padding-right:10px;
-	width:864px;
+	width:300px;
 	height:42px;
 	list-style-type:none;
 	-webkit-border-radius:0px;
@@ -78,48 +90,6 @@
 	background: linear-gradient(top, #000000 0%,#444444 100%);
 }
 
-.search {
-	position:relative;
-	float:right;
-	margin-top:15px;
-}
-
-.search input[type=text]{
-	width:155px;
-	height:20px;
-	padding-left:18px;
-	margin-left:10px;
-	padding-right:4px;
-	outline:none;
-	border: none;
-	-webkit-border-radius: 20px; 
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	-moz-box-shadow: inset 1px 1px 3px #7a7a7a;
-	box-shadow: inset 1px 1px 3px #7a7a7a;
-}
-
-.search a:before {
-	width:6px;
-	height:6px;
-	border:2px solid  #000;
-	background:transparent;
-	-webkit-border-radius:12px;
-	-moz-border-radius:12px;
-	border-radius:12px;
-}
-
-.search a:after {
-	left:24px;
-	width:2px;
-	height:7px;
-	margin-top:0;
-	-webkit-transform:rotate(-45deg);
-	-moz-transform:rotate(-45deg);
-	-o-transform:rotate(-45deg);
-	transform:rotate(-45deg);
-}
-
 li a:before, li a:after {
 	content:"";
 	position:absolute;
@@ -143,4 +113,52 @@ li a:before, li a:after {
 
 #menu_wrap img:hover {
 	opacity: 0.8;
+}
+
+.user_list {
+	margin-top: 10px;
+	list-style: none;
+	font-family: Calibri;
+}
+
+form input[type="text"]{
+	margin-top: -10px;
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: green;
+}
+
+form input[type="password"]{
+	margin-top: 5px;
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: green;
+}
+
+form input[type="submit"]{
+	margin-top: 5px;
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: green;
+	font-family: Aller;
+}
+
+.wrap #reg button {
+	margin-top: 5px;
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: green;
+	font-family: Aller;
 }

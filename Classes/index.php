@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 class index
 {
@@ -8,7 +8,7 @@ class index
 		if(isset($_SESSION['login'])){
 			echo "Hello ". $_SESSION['login'];
 		}else{
-			echo "Hello there";
+			echo "<div class=\"wrap\">Hello there</div>";
 		}
 	}
 	
