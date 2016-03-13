@@ -2,11 +2,17 @@
 
 class login
 {
+	
+	
 	public function __construct()
 	{
 		require_once "Database.php";
 		require "view/login.html";
-		$db = new Database(); 
+		$db = new Database();
+		if(isset($_SESSION['err'])){
+			echo $_SESSION['err'];
+			unset($_SESSION['err']);
+		}
 	}
 
 	
@@ -22,6 +28,9 @@ class login
 		$_SESSION['login'] = $log[0]['user'];
 		$_SESSION['id']    = $log[0]['id'];
 		header("Location: ../index");
+		}else{
+			$_SESSION['err'] = "Wrong user and pass!";
+			header("Location: ../login");
 		}
 	}
 	
